@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
-
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      backgroundColor: Colors.grey[400],
       body: SafeArea(
         child: Center(
           child: Column(
@@ -18,36 +17,34 @@ class WelcomePage extends StatelessWidget {
                   horizontal: 25,
                 ),
                 child: Text(
-                  'TOBACCO FARMERS REGISTRATION',
+                  'Pay Electricity Bills with PowerApp',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 20,
-                    color: Colors.green,
+                    fontSize: 22,
                   ),
                 ),
               ),
               //picture of the app
 
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30),
+                padding: const EdgeInsets.symmetric(horizontal: 30,vertical: 20),
                 child: ClipOval(
                   child: Image.asset(
                     'assets/images/escom_logo1.png',
-                    height: 230,
+                    height: 180,
                   ),
                 ),
               ),
               //text
 
-              
               const SizedBox(height: 40),
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 45),
                 child: Text(
-                  'Promotng and developing the tobacco industry in Malawi and advance the interest of tobacco growers',
+                  'We provide a secure and convinient wayto purchase prepared meter tokens and,recharge the meter directly online.',
                   style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.black87,
+                    fontSize: 22,
+                    color: Colors.black, fontWeight: FontWeight.bold,
                     height: 1.5,
                   ),
                 ),
@@ -63,7 +60,8 @@ class WelcomePage extends StatelessWidget {
               //sign in
 
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
                 child: GestureDetector(
                   onTap: () {
                     // Navigator.push(
@@ -76,7 +74,7 @@ class WelcomePage extends StatelessWidget {
                   child: Container(
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                      color: Colors.green,
+                      color: Colors.blue,
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: const Center(
