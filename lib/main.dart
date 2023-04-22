@@ -1,3 +1,4 @@
+import 'package:escom_app/pages/login.dart';
 import 'package:escom_app/pages/register.dart';
 import 'package:escom_app/pages/welcome_page.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: const RegisterPage(),
+      home: const LoginPage(),
     );
   }
 }
