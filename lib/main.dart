@@ -2,7 +2,8 @@ import 'package:escom_app/pages/direct_recharge.dart';
 import 'package:escom_app/pages/home_page.dart';
 import 'package:escom_app/pages/login.dart';
 import 'package:escom_app/pages/notifications.dart';
-import 'package:escom_app/pages/payment_page.dart';
+import 'package:escom_app/pages/make_payment.dart';
+import 'package:escom_app/pages/payment_method.dart';
 import 'package:escom_app/pages/register.dart';
 import 'package:escom_app/pages/welcome_page.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: const NotificationsPage(),
+      home: const PaymentMethodPage(),
     );
   }
 }
