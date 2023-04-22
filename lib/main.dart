@@ -1,3 +1,4 @@
+import 'package:escom_app/pages/direct_recharge.dart';
 import 'package:escom_app/pages/home_page.dart';
 import 'package:escom_app/pages/login.dart';
 import 'package:escom_app/pages/payment_page.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: const PaymentMethod(),
+      home: const DirectRecharge(),
     );
   }
 }
