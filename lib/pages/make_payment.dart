@@ -1,5 +1,4 @@
 import 'package:escom_app/pages/home_page.dart';
-import 'package:escom_app/pages/notifications.dart';
 import 'package:flutter/material.dart';
 
 class MakePayment extends StatelessWidget {
