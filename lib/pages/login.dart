@@ -1,3 +1,5 @@
+import 'package:escom_app/pages/home_page.dart';
+import 'package:escom_app/pages/register.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -98,12 +100,12 @@ class LoginPage extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
                 child: GestureDetector(
                   onTap: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //     builder: (context) => const LogInPage(),
-                    //   ),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const HomePage(),
+                      ),
+                    );
                   },
                   child: Container(
                     padding: const EdgeInsets.all(20),
@@ -127,17 +129,26 @@ class LoginPage extends StatelessWidget {
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Text(
+                children:  [
+                  const Text(
                     'Dont have an account? ',
                     style: TextStyle(fontSize: 18),
                   ),
-                  Text(
-                    ' Sign Up',
-                    style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.blue,
-                        fontWeight: FontWeight.bold),
+                  GestureDetector(onTap: () {
+                        Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const RegisterPage(),
+                      ),
+                    );
+                  },
+                    child: const Text(
+                      ' Sign Up',
+                      style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold),
+                    ),
                   )
                 ],
               )

@@ -1,3 +1,4 @@
+import 'package:escom_app/pages/payment_method.dart';
 import 'package:flutter/material.dart';
 
 class DirectRecharge extends StatelessWidget {
@@ -147,12 +148,12 @@ class DirectRecharge extends StatelessWidget {
                       const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
                   child: GestureDetector(
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const LogInPage(),
-                      //   ),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const PaymentMethodPage(),
+                        ),
+                      );
                     },
                     child: Container(
                       padding: const EdgeInsets.all(20),

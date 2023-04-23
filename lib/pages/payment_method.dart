@@ -1,3 +1,4 @@
+import 'package:escom_app/pages/make_payment.dart';
 import 'package:flutter/material.dart';
 
 class PaymentMethodPage extends StatelessWidget {
@@ -29,6 +30,16 @@ class PaymentMethodPage extends StatelessWidget {
                   ],
                 ),
 
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                  child: ClipOval(
+                    child: Image.asset(
+                      'assets/images/escom_logo1.png',
+                      height: 150,
+                    ),
+                  ),
+                ),
                 const Padding(
                   padding: EdgeInsets.symmetric(vertical: 20),
                   child: Text(
@@ -38,16 +49,6 @@ class PaymentMethodPage extends StatelessWidget {
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
                       height: 1.5,
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-                  child: ClipOval(
-                    child: Image.asset(
-                      'assets/images/escom_logo1.png',
-                      height: 150,
                     ),
                   ),
                 ),
@@ -61,40 +62,80 @@ class PaymentMethodPage extends StatelessWidget {
                         padding: const EdgeInsets.only(
                           left: 10,
                         ),
-                        child: Image.asset(
-                          'assets/images/natioanl.png',
-                          height: 100,
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const MakePayment(),
+                              ),
+                            );
+                          },
+                          child: Image.asset(
+                            'assets/images/natioanl.png',
+                            height: 100,
+                          ),
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(
                           left: 50,
                         ),
-                        child: Image.asset(
-                          'assets/images/nbs.png',
-                          height: 100,
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const MakePayment(),
+                              ),
+                            );
+                          },
+                          child: Image.asset(
+                            'assets/images/nbs.png',
+                            height: 100,
+                          ),
                         ),
                       ),
                     ],
                   ),
                 ),
                 //email text field
-                 Padding(
+                Padding(
                   padding: const EdgeInsets.symmetric(vertical: 30),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Image.asset(
-                        'assets/images/tnm mpamba.jpeg',
-                        height: 100,
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const MakePayment(),
+                            ),
+                          );
+                        },
+                        child: Image.asset(
+                          'assets/images/tnm mpamba.jpeg',
+                          height: 100,
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(
                           left: 20,
                         ),
-                        child: Image.asset(
-                          'assets/images/airtel.png',
-                          height: 100,
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const MakePayment(),
+                              ),
+                            );
+                          },
+                          child: Image.asset(
+                            'assets/images/airtel.png',
+                            height: 100,
+                          ),
                         ),
                       ),
                     ],

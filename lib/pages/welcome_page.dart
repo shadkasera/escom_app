@@ -1,3 +1,4 @@
+import 'package:escom_app/pages/login.dart';
 import 'package:flutter/material.dart';
 
 class WelcomePage extends StatelessWidget {
@@ -64,12 +65,12 @@ class WelcomePage extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
                 child: GestureDetector(
                   onTap: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //     builder: (context) => const LogInPage(),
-                    //   ),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const LoginPage(),
+                      ),
+                    );
                   },
                   child: Container(
                     padding: const EdgeInsets.all(20),

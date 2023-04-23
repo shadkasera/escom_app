@@ -1,3 +1,5 @@
+import 'package:escom_app/pages/direct_recharge.dart';
+import 'package:escom_app/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 class NotificationsPage extends StatelessWidget {
@@ -90,12 +92,12 @@ class NotificationsPage extends StatelessWidget {
                       const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
                   child: GestureDetector(
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const LogInPage(),
-                      //   ),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const DirectRecharge(),
+                        ),
+                      );
                     },
                     child: Container(
                       padding: const EdgeInsets.all(20),

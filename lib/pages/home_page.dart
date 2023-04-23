@@ -1,3 +1,5 @@
+import 'package:escom_app/pages/notifications.dart';
+import 'package:escom_app/pages/payment_method.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -20,10 +22,11 @@ class HomePage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 30),
                       child: GestureDetector(
-                          onTap: () {
-                            //method here
-                          },
-                          child: const Icon(Icons.arrow_back)),
+                        onTap: () {
+                          //method here
+                        },
+                        child: const Icon(Icons.arrow_back),
+                      ),
                     ),
                   ],
                 ),
@@ -116,12 +119,12 @@ class HomePage extends StatelessWidget {
                       const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
                   child: GestureDetector(
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const LogInPage(),
-                      //   ),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const PaymentMethodPage(),
+                        ),
+                      );
                     },
                     child: Container(
                       padding: const EdgeInsets.all(20),
@@ -149,12 +152,12 @@ class HomePage extends StatelessWidget {
                       const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
                   child: GestureDetector(
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const LogInPage(),
-                      //   ),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const NotificationsPage(),
+                        ),
+                      );
                     },
                     child: Container(
                       padding: const EdgeInsets.all(20),

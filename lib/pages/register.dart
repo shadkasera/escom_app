@@ -1,3 +1,4 @@
+import 'package:escom_app/pages/login.dart';
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatelessWidget {
@@ -167,14 +168,26 @@ class RegisterPage extends StatelessWidget {
                 //register
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    Text(
+                  children:  [
+                    const Text(
                       'Already have an account? ',
                       style: TextStyle(fontSize: 18),
                     ),
-                    Text(
-                      ' Sign In',
-                      style: TextStyle(fontSize: 18, color: Colors.blue,fontWeight: FontWeight.bold),
+                    GestureDetector(onTap: () {
+                          Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const LoginPage(),
+                      ),
+                    );
+                    },
+                      child: const Text(
+                        ' Sign In',
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.blue,
+                            fontWeight: FontWeight.bold),
+                      ),
                     )
                   ],
                 )
