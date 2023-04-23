@@ -25,7 +25,15 @@ class NotificationsPage extends StatelessWidget {
                         onTap: () {
                           //method here
                         },
-                        child: const Icon(Icons.arrow_back),
+                        child: GestureDetector(onTap: () {
+                              Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const HomePage(),
+                      ),
+                    );
+                        },
+                          child: const Icon(Icons.arrow_back)),
                       ),
                     ),
                   ],

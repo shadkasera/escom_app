@@ -1,3 +1,4 @@
+import 'package:escom_app/pages/login.dart';
 import 'package:escom_app/pages/notifications.dart';
 import 'package:escom_app/pages/payment_method.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +26,15 @@ class HomePage extends StatelessWidget {
                         onTap: () {
                           //method here
                         },
-                        child: const Icon(Icons.arrow_back),
+                        child: GestureDetector(onTap: () {
+                              Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const LoginPage(),
+                      ),
+                    );
+                        },
+                          child: const Icon(Icons.arrow_back)),
                       ),
                     ),
                   ],

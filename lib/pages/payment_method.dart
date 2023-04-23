@@ -1,3 +1,4 @@
+import 'package:escom_app/pages/home_page.dart';
 import 'package:escom_app/pages/make_payment.dart';
 import 'package:flutter/material.dart';
 
@@ -24,7 +25,15 @@ class PaymentMethodPage extends StatelessWidget {
                         onTap: () {
                           //method here
                         },
-                        child: const Icon(Icons.arrow_back),
+                        child: GestureDetector(onTap: () {
+                              Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const HomePage(),
+                      ),
+                    );
+                        },
+                          child: const Icon(Icons.arrow_back)),
                       ),
                     ),
                   ],
